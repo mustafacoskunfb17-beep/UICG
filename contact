@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — IUCG</title>
+<style>
+:root{--bg:#071226;--panel:#0e1a2a;--muted:#9fb0c9;--accent:#2ba6ff;--glass:rgba(255,255,255,0.03);--radius:14px;--maxw:1200px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+*{box-sizing:border-box} html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#051226);color:#e6f0fb}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:26px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px}
+.logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#00d0ff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#021028;font-size:24px}
+nav a{margin:0 12px;color:var(--muted);font-weight:600;text-decoration:none}
+nav a:hover{color:#fff}
+form{display:flex;flex-direction:column;gap:10px}
+input,textarea,button{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+textarea{min-height:120px}
+button.primary{background:var(--accent);color:#021028;border:none;font-weight:800}
+.muted{color:var(--muted)}
+h1{margin-bottom:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="logo">IUCG</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="committees.html">Committees</a>
+<a href="secretariat.html">Secretariat</a>
+<a href="executive.html">Executive Team</a>
+<a href="advisors.html">Advisors</a>
+<a href="contact.html">Contact</a>
+<a href="rules.html">Rules</a>
+</nav>
+</header>
+
+<h1>Contact</h1>
+<p class="muted">Any questions? Reach out via the form. Replace with backend action if needed.</p>
+<form onsubmit="event.preventDefault();alert('Form submitted (demo)');">
+<input placeholder="Name / Institution" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Message"></textarea>
+<button class="primary" type="submit" style="margin-top:6px">Send</button>
+</form>
+</div>
+</body>
+</html>
